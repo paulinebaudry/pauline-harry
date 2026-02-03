@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+
+  <header class="nav">
+    <a href="www.pauline-harry.com"><img src="images/logo.png" alt="Logo" class="logo" /></a>
+
+
+    <nav class="nav-links">
+      <a href="#order">
+        <span class="lang en">Order of Day</span>
+        <span class="lang fr">Programme</span>
+      </a>
+      <a href="#location">
+        <span class="lang en">Location</span>
+        <span class="lang fr">Lieu</span>
+      </a>
+      <a href="#travel">
+        <span class="lang en">Travel & Stay</span>
+        <span class="lang fr">Voyage & Hébergement</span>
+      </a>
+      <a href="#faq">
+        <span class="lang en">FAQ</span>
+        <span class="lang fr">FAQ</span>
+      </a>
+      <a href="#registry">
+        <span class="lang en">Registry</span>
+        <span class="lang fr">Liste de mariage</span>
+      </a>
+    </nav>
+
+
+
+
+  <!-- Hamburger icon -->
+   <div class="hamburger" onclick="toggleMenu()">
+     <span></span>
+     <span></span>
+     <span></span>
+   </div>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">EN</button>
+    <span class="separator">|</span>
+    <button onclick="setLanguage('fr')">FR</button>
+  </div>
+
+<!-- HERO -->
+<section class="hero-bis">
+  <div class="hero-text">
+    <h2>Getting there</h2>
+
+    <h3>Directions and transport</h3>
+    <p>Golf du Prieuré is located one hour from Paris.</p>
+    </div>
+
+
+</section>
+
+<section class="section white">
+  <h1>Driving</h1>
+
+  <div class="two-col">
+    <div>
+      <p>We recommend driving as that will be the fastest way to travel if you are coming from Paris.</p><br>
+      <p>There will be plenty of parking available at the venue.</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section white">
+  <h1>Taxi numbers</h1>
+
+  <div class="two-col">
+    <div>
+      <h2>Taxi company name</h2>
+      <p>Contact details</a></p><br>
+
+      <h2>Taxi company name</h2>
+      <p>Contact details</a></p><br>
+
+      <h2>Taxi company name</h2>
+      <p>Contact details</a></p><br>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- THIRD SECTION -->
+<section class="section white">
+
+  <h1>Public transport</h1>
+  <p>If you wish to get public transport from Paris, we recommend taking the <a href="https://www.transilien.com/en/page-lignes/ligne-j" target="blank">ligne J</a> from Gare Saint-Lazare to Épône Mézières (45 min journey). You will the need to get a 20 min taxi to the venue.</p>
+  <p>You can also get other train lines to Mantes-la-Jolie, which is also located a 20 min car drive from the venue.</p>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="images/logo.png" alt="Logo" class="logo" />
+
+  <p>Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</p>
+  <p>Harry: +44 7854 730229 | harryhollowood@gmail.com</p>
+
+</footer>
+
+<script>
+function setLanguage(lang) {
+  // hide all languages
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+
+  // show selected language
+  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
+
+  // save preference
+  localStorage.setItem('preferredLanguage', lang);
+
+  // highlight selected button
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+}
+
+// Load saved language or default to English
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  setLanguage(savedLang);
+});
+</script>
+
+</body>
+</html>
