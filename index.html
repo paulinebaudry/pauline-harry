@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+
+<header class="nav">
+  <a href="www.pauline-harry.com"><img src="images/logo.png" alt="Logo" class="logo" /></a>
+
+
+  <nav class="nav-links">
+    <a href="#order">
+      <span class="lang en">Order of Day</span>
+      <span class="lang fr">Programme</span>
+    </a>
+    <a href="#location">
+      <span class="lang en">Location</span>
+      <span class="lang fr">Lieu</span>
+    </a>
+    <a href="#travel">
+      <span class="lang en">Travel & Stay</span>
+      <span class="lang fr">Voyage & Hébergement</span>
+    </a>
+    <a href="#faq">
+      <span class="lang en">FAQ</span>
+      <span class="lang fr">FAQ</span>
+    </a>
+    <a href="#registry">
+      <span class="lang en">Registry</span>
+      <span class="lang fr">Liste de mariage</span>
+    </a>
+  </nav>
+
+
+
+
+<!-- Hamburger icon -->
+ <div class="hamburger" onclick="toggleMenu()">
+   <span></span>
+   <span></span>
+   <span></span>
+ </div>
+</header>
+
+<div class="lang-switch">
+  <button onclick="setLanguage('en')">EN</button>
+  <span class="separator">|</span>
+  <button onclick="setLanguage('fr')">FR</button>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>
+      <span class="lang en">We’re getting married</span>
+      <span class="lang fr">Nous nous marions</span>
+    </h2>
+    <h1>Pauline & Harry</h1>
+    <p>
+      <span class="lang en">August 29, 2026</span>
+      <span class="lang fr">29 Août 2026</span>
+    </p>
+    <p>Golf du Prieuré, Sailly, France</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8JFQz77jfGIF4BY51MWFyxsTmc3xA7Y-Y7LEsrXHZJ7Lbog/viewform?usp=dialog" target="_blank">
+      <button class="rsvp-btn">
+        <span class="lang en">RSVP</span>
+        <span class="lang fr">Répondre</span>
+      </button>
+    </a>
+  </div>
+
+  <img src="images/flowers.png" alt="Hero" class="hero-image" />
+</section>
+
+<!-- ORDER OF DAY -->
+<section id="order" class="section grey overlap">
+  <h1>
+    <span class="lang en">Order of Day</span>
+    <span class="lang fr">Programme</span>
+  </h1>
+
+  <div class="two-col">
+    <img src="images/flowers-prieure.png" alt="Prieure with flowers" />
+    <div>
+      <h2>Saturday</h2>
+      <h2>17h - Arrival</h2>
+      <p>
+        <span class="lang en">Please aim to arrive at 5 pm to make your way to the ceremony. There will be directions upon arrival.</span>
+        <span class="lang fr">Merci de viser une arrivée à 17h pour vous rendre à la cérémonie. Des indications seront fournies à votre arrivée.</span>
+      </p>
+      <p>
+        <span class="lang en">Note: there will be a short but steep walk. Some transport will be available on site for those who are less able to walk up.</span>
+        <span class="lang fr">Remarque : il y aura une courte mais raide montée. Un transport sera disponible sur place pour ceux qui ont du mal à marcher.</span>
+      </p>
+      <h2>17h30 - Ceremony</h2>
+      <p>
+        <span class="lang en">Please make sure you are seated by 5:30 pm.</span>
+        <span class="lang fr">Merci d’être assis pour 17h30.</span>
+      </p>
+      <h2>18h15 - Cocktail</h2>
+      <p>
+        <span class="lang en">Drinks in front of the Prieuré.</span>
+        <span class="lang fr">Cocktails devant le Prieuré.</span>
+      </p>
+      <h2>20h - Dinner</h2>
+      <p>
+        <span class="lang en">Dinner and party.</span>
+        <span class="lang fr">Dîner et soirée.</span>
+      </p>
+      <p>
+        <span class="lang en">We hope you can stay for a boogie, with ample time for the most energetic - the venue will accommodate us until 4am.</span>
+        <span class="lang fr">Nous espérons que vous resterez danser, le lieu restera ouvert jusqu’à 4h pour les plus énergiques.</span>
+      </p>
+      <br>
+        <h2>Sunday - 12h</h2>
+        <p>
+          <span class="lang en">Please join us for brunch at the same venue from 12h.</span>
+          <span class="lang fr">Nous vous invitons à nous rejoindre pour le brunch, au même endroit, à partir de 12h.</span>
+        </p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="section white">
+  <div class="three-col-layout">
+    <div class="left-col">
+      <h1>
+        <span class="lang en">Location</span>
+        <span class="lang fr">Lieu</span>
+      </h1>
+      <p>
+        <span class="lang en">The wedding is taking place at the Golf du Prieuré, which is a location near to our hearts (non-golfer ones too!). The venue is in Sailly, in the Yvelines department, about 1 hour car ride from Paris.</span>
+        <span class="lang fr">Le mariage aura lieu au Golf du Prieuré, un lieu cher à nos cœurs (même pour ceux qui ne jouent pas au golf !). Le lieu est à Sailly, dans les Yvelines, à environ 1 heure de route de Paris.</span>
+      </p>
+    </div>
+    <div class="text-image">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.8442354144086!2d1.7920159000000002!3d49.0515852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6eae6f0b705a7%3A0x1527ef6935e54833!2sGolf%20Du%20Prieure!5e0!3m2!1sen!2suk!4v1769190683879!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL -->
+<section id="travel" class="section grey">
+  <h1>
+    <span class="lang en">Travel & Stay</span>
+    <span class="lang fr">Voyage & Hébergement</span>
+  </h1>
+
+  <div class="three-boxes">
+    <div class="box">
+      <h3>
+        <span class="lang en">Getting There</span>
+        <span class="lang fr">Se rendre au lieu</span>
+      </h3>
+      <p><a href="#"><span class="lang en">Directions & transport</span><span class="lang fr">Itinéraire & transport</span></a></p>
+    </div>
+    <div class="box">
+      <h3>
+        <span class="lang en">Accommodation</span>
+        <span class="lang fr">Hébergement</span>
+      </h3>
+      <p><a href="#"><span class="lang en">Places to stay</span><span class="lang fr">Où loger</span></a></p>
+    </div>
+    <div class="box">
+      <h3>
+        <span class="lang en">Local Tips</span>
+        <span class="lang fr">Conseils locaux</span>
+      </h3>
+      <p><a href="#"><span class="lang en">Things to do</span><span class="lang fr">Activités à faire</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section white">
+  <div class="faq-layout">
+    <h1>
+      <span class="lang en">Frequently Asked Questions</span>
+      <span class="lang fr">Questions Fréquemment Posées</span>
+    </h1>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">
+          <h2>
+            <span class="lang en">What is the dress code?</span>
+            <span class="lang fr">Quel est le code vestimentaire ?</span>
+          </h2>
+        </button>
+        <div class="faq-answer">
+          <p>
+            <span class="lang en">Formal. Suits, dresses, jumpsuits... we trust you to look the part! (The grooms party will be wearing morning coats, which you are welcome to do as well, however it is not required.)</span>
+            <span class="lang fr">Tenue formelle. Costumes, robes, combinaisons… Le cortège des mariés portera des redingotes, vous pouvez le faire également mais ce n’est pas obligatoire.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <h2>
+            <span class="lang en">Where should I stay?</span>
+            <span class="lang fr">Où devrais-je loger ?</span>
+          </h2>
+        </button>
+        <div class="faq-answer">
+          <p>
+            <span class="lang en">We recommend staying close to the venue...</span>
+            <span class="lang fr">Nous recommandons de séjourner près du lieu...</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <h2>
+            <span class="lang en">Are children welcome?</span>
+            <span class="lang fr">Les enfants sont-ils les bienvenus ?</span>
+          </h2>
+        </button>
+        <div class="faq-answer">
+          <p>
+            <span class="lang en">Unfortunately we won't be able to accommodate children during our wedding reception...</span>
+            <span class="lang fr">Malheureusement nous ne pourrons pas accueillir d’enfants lors de la réception...</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <h2>
+            <span class="lang en">What transport do I need to plan?</span>
+            <span class="lang fr">Quel transport dois-je prévoir ?</span>
+          </h2>
+        </button>
+        <div class="faq-answer">
+          <p>
+            <span class="lang en">Car or taxis to and from the venue...</span>
+            <span class="lang fr">Voiture ou taxis pour se rendre et revenir du lieu...</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <h2>
+            <span class="lang en">Can I play golf?</span>
+            <span class="lang fr">Puis-je jouer au golf ?</span>
+          </h2>
+        </button>
+        <div class="faq-answer">
+          <p>
+            <span class="lang en">The golf is technically open during that weekend...</span>
+            <span class="lang fr">Le golf est techniquement ouvert ce week-end...</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTRY -->
+<section id="registry" class="section grey">
+  <h1>
+    <span class="lang en">Registry</span>
+    <span class="lang fr">Liste de mariage</span>
+  </h1>
+  <p>
+    <span class="lang en">If you wish to purchase a gift, we have set up a registry at</span>
+    <span class="lang fr">Si vous souhaitez offrir un cadeau, nous avons créé une liste de mariage sur</span>
+    <a href="https://www.weddingshop.com/buy/view/264829?isPreview=true" target="_blank">The Wedding Shop</a>.
+  </p>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <img src="images/hp-photobooth-bw.png" alt="Photobooth image" class="cta-image" />
+  <p>
+    <span class="lang en">We can’t wait to celebrate with you!</span>
+    <span class="lang fr">Nous avons hâte de célébrer avec vous !</span>
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8JFQz77jfGIF4BY51MWFyxsTmc3xA7Y-Y7LEsrXHZJ7Lbog/viewform?usp=dialog" target="_blank">
+    <button class="rsvp-btn">
+      <span class="lang en">RSVP</span>
+      <span class="lang fr">Répondre</span>
+    </button>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="images/logo.png" alt="Logo" class="logo" />
+  <p>Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</p>
+  <p>Harry: +44 7854 730229 | harryhollowood@gmail.com</p>
+</footer>
+
+<!-- LANGUAGE SCRIPT -->
+<script>
+function setLanguage(lang) {
+  // hide all languages
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+
+  // show selected language
+  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
+
+  // save preference
+  localStorage.setItem('preferredLanguage', lang);
+
+  // highlight selected button
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+}
+
+// Load saved language or default to English
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  setLanguage(savedLang);
+});
+</script>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
+
+// Keep language script
+function setLanguage(lang) {
+  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
+  localStorage.setItem('preferredLanguage', lang);
+
+  document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  setLanguage(savedLang);
+});
+</script>
+
+
+
+<!-- FAQ SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const faqButtons = document.querySelectorAll(".faq-question");
+
+  faqButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
+      const isOpen = answer.classList.contains("open");
+
+      if (isOpen) {
+        answer.style.maxHeight = "0";
+        answer.classList.remove("open");
+        button.classList.remove("active");
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 32 + "px";
+        answer.classList.add("open");
+        button.classList.add("active");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
