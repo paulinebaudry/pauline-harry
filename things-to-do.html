@@ -9,43 +9,54 @@
 <body>
 
   <!-- NAV -->
-
   <header class="nav">
     <a href="https://pauline-harry.com/"><img src="images/logo.png" alt="Logo" class="logo" /></a>
 
-
-     <nav class="nav-links">
-      <a href="https://pauline-harry.com/#order">
-        <span class="lang en">Order of Day</span>
+    <nav class="nav-links">
+      <a href="#order">
+        <span class="lang en">Schedule</span>
         <span class="lang fr">Programme</span>
       </a>
-      <a href="https://pauline-harry.com/#location">
+      <a href="#location">
         <span class="lang en">Location</span>
         <span class="lang fr">Lieu</span>
       </a>
-      <a href="https://pauline-harry.com/#travel">
-        <span class="lang en">Travel & Stay</span>
-        <span class="lang fr">Voyage & Hébergement</span>
-      </a>
-      <a href="https://pauline-harry.com/#faq">
+      <div class="nav-item dropdown">
+        <a href="#travel" class="dropdown-toggle">
+          <span class="lang en">Travel & Stay</span>
+          <span class="lang fr">Voyage & Hébergement</span>
+        </a>
+        <div class="dropdown-menu">
+          <a href="https://pauline-harry.com/getting-there">
+            <span class="lang en">Getting there</span>
+            <span class="lang fr">S’y rendre</span>
+          </a>
+          <a href="https://pauline-harry.com/accommodation">
+            <span class="lang en">Accommodation</span>
+            <span class="lang fr">Hébergement</span>
+          </a>
+          <a href="https://pauline-harry.com/things-to-do">
+            <span class="lang en">Things to do</span>
+            <span class="lang fr">À faire sur place</span>
+          </a>
+        </div>
+      </div>
+      <a href="#faq">
         <span class="lang en">FAQ</span>
         <span class="lang fr">FAQ</span>
       </a>
-      <a href="https://pauline-harry.com/#registry">
+      <a href="#registry">
         <span class="lang en">Registry</span>
         <span class="lang fr">Liste de mariage</span>
       </a>
     </nav>
 
-
-
-
-  <!-- Hamburger icon -->
-   <div class="hamburger" onclick="toggleMenu()">
-     <span></span>
-     <span></span>
-     <span></span>
-   </div>
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
   <div class="lang-switch">
@@ -54,123 +65,135 @@
     <button onclick="setLanguage('fr')">FR</button>
   </div>
 
-<!-- HERO -->
-<section class="hero-bis">
-  <div class="hero-text">
-    <h2>Local tips</h2>
-    <h3>Things to do</h3>
-    <p>If you are looking for things to do in the region around the wedding, we've put together some recommendations and places, which we think are worth a visit!</p>
+  <!-- HERO -->
+  <section class="hero-bis">
+    <div class="hero-text">
+      <h2>
+        <span class="lang en">Local tips</span>
+        <span class="lang fr">Conseils locaux</span>
+      </h2>
+      <h3>
+        <span class="lang en">Things to do</span>
+        <span class="lang fr">À faire sur place</span>
+      </h3>
+      <p>
+        <span class="lang en">If you are looking for things to do in the region around the wedding, we've put together some recommendations and places, which we think are worth a visit!</span>
+        <span class="lang fr">Si vous cherchez des choses à faire dans la région autour du mariage, nous avons rassemblé quelques recommandations et lieux que nous pensons valoir le détour !</span>
+      </p>
     </div>
-</section>
+    <img src="images/croissant-icon.png" alt="Camera icon" />
+  </section>
 
-<section class="section white">
-  <h1>Vexin region</h1>
+  <section class="section white">
+    <h1>
+      <span class="lang en">Vexin region</span>
+      <span class="lang fr">Région du Vexin</span>
+    </h1>
 
-  <div class="two-col">
-    <img src="images/img_vexin.png" alt="Giverny" />
-    <div>
-      <h2>Places to visit</h2>
-      <h3>Giverny</h3>
-        <p>Visit Claude Monet's House and Gardens in Giverny: <a href="https://claudemonetgiverny.fr/en/" target="blank_">more information</a></p><br>
-      <h3>La Roche-Guyon</h3>
-      <p>Pretty commune along the Seine, with an impressive Chateau you can visit: <a href="https://www.chateaudelarocheguyon.fr/en/"  target="blank">more information</a></p><br>
-      <h3>Le domaine de Villarceaux</h3>
-      <p>Beautiful Chateau and gardens from 17th century: <a href="https://www.iledefrance.fr/decouvrir-la-richesse-du-patrimoine/patrimoine-artistique-et-architectural/le-domaine-de-villarceaux" target="blank">more information</a></p>
-<br>
-      <h2>Places to eat</h2>
-      <h3>Le 20 du Domaine</h3>
-      <p>Lovely french restaurant, located just across from le Domaine de la Corniche, a high-end hotel with a view over the river. <a href="https://www.domainedelacorniche.com/fr/page/restaurant-20-restaurant-giverny.1257.html" target="blank_">More information</a></a>
+    <div class="two-col">
+      <img src="images/img_vexin.png" alt="Giverny" />
+      <div>
+        <h3>
+          <span class="lang en">Giverny</span>
+          <span class="lang fr">Giverny</span>
+        </h3>
+        <p>
+          <span class="lang en">Visit Claude Monet's House and Gardens in Giverny: <a href="https://claudemonetgiverny.fr/en/" target="_blank">more information</a></span>
+          <span class="lang fr">Visitez la maison et les jardins de Claude Monet à Giverny : <a href="https://claudemonetgiverny.fr/en/" target="_blank">plus d’informations</a></span>
+        </p><br>
 
+        <h3>
+          <span class="lang en">La Roche-Guyon</span>
+          <span class="lang fr">La Roche-Guyon</span>
+        </h3>
+        <p>
+          <span class="lang en">Pretty commune along the Seine, with an impressive Chateau you can visit: <a href="https://www.chateaudelarocheguyon.fr/en/" target="_blank">more information</a></span>
+          <span class="lang fr">Charmante commune le long de la Seine, avec un château impressionnant à visiter : <a href="https://www.chateaudelarocheguyon.fr/en/" target="_blank">plus d’informations</a></span>
+        </p><br>
 
+        <h3>
+          <span class="lang en">Le domaine de Villarceaux</span>
+          <span class="lang fr">Le domaine de Villarceaux</span>
+        </h3>
+        <p>
+          <span class="lang en">Beautiful Chateau and gardens from 17th century: <a href="https://www.iledefrance.fr/decouvrir-la-richesse-du-patrimoine/patrimoine-artistique-et-architectural/le-domaine-de-villarceaux" target="_blank">more information</a></span>
+          <span class="lang fr">Magnifique château et jardins du XVIIe siècle : <a href="https://www.iledefrance.fr/decouvrir-la-richesse-du-patrimoine/patrimoine-artistique-et-architectural/le-domaine-de-villarceaux" target="_blank">plus d’informations</a></span>
+        </p><br>
+
+        <h3>
+          <span class="lang en">Le 20 du Domaine</span>
+          <span class="lang fr">Le 20 du Domaine</span>
+        </h3>
+        <p>
+          <span class="lang en">Lovely French restaurant, located just across from le Domaine de la Corniche, a high-end hotel with a view over the river. <a href="https://www.domainedelacorniche.com/fr/page/restaurant-20-restaurant-giverny.1257.html" target="_blank">More information</a></span>
+          <span class="lang fr">Charmant restaurant français, situé en face du Domaine de la Corniche, un hôtel haut de gamme avec vue sur la rivière. <a href="https://www.domainedelacorniche.com/fr/page/restaurant-20-restaurant-giverny.1257.html" target="_blank">Plus d’informations</a></span>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- PARIS SECTION -->
+  <section class="section white">
+    <h1>
+      <span class="lang en">Paris</span>
+      <span class="lang fr">Paris</span>
+    </h1>
+    <p>
+      <span class="lang en">Last but certainly not least: Paris. The list could go on forever, but here are a few of our favorite spots — places we genuinely love and return to. For food, <a href="https://lefooding.com/en" target="_blank">Le Fooding</a> is otherwise a great resource to find good places to eat.</span>
+      <span class="lang fr">Enfin mais surtout : Paris. La liste pourrait être infinie, mais voici quelques-uns de nos endroits favoris — des lieux que nous aimons vraiment et où nous revenons. Pour la gastronomie, <a href="https://lefooding.com/en" target="_blank">Le Fooding</a> est également une excellente ressource pour trouver de bonnes adresses.</span>
+    </p>
 
+    <!-- Neighborhoods -->
+    <section class="neighborhood">
+      <h3>
+        <span class="lang en">1er arrondissement</span>
+        <span class="lang fr">1er arrondissement</span>
+      </h3>
+      <ul style="padding-left:20px">
+        <li>
+          <span class="lang en">Rue Saint Anne - The go-to street for Japanese and Korean food. Try <a href="https://kintarogroup.com/tonton-ramen/" target="_blank">Tonton Ramen</a> for excellent ramen.</span>
+          <span class="lang fr">Rue Saint Anne - La rue incontournable pour la cuisine japonaise et coréenne. Essayez <a href="https://kintarogroup.com/tonton-ramen/" target="_blank">Tonton Ramen</a> pour d’excellents ramen.</span>
+        </li>
+        <li>
+          <span class="lang en">La Bourse du Commerce (or <a href="https://www.pinaultcollection.com/fr/boursedecommerce" target="_blank">Pinault Collection</a>) hosts different modern art exhibition in a beautiful historical building.</span>
+          <span class="lang fr">La Bourse du Commerce (ou <a href="https://www.pinaultcollection.com/fr/boursedecommerce" target="_blank">Pinault Collection</a>) accueille différentes expositions d’art moderne dans un superbe bâtiment historique.</span>
+        </li>
+      </ul>
+    </section>
 
+    <!-- Other neighborhoods can follow the same pattern -->
+    <!-- ... -->
 
-<!-- THIRD SECTION -->
-<section class="section white">
+  </section>
 
-    <h1>Paris</h1><p>  Last but certainly not least: Paris. The list could go on forever, but here
-    are a few of our favorite spots — places we genuinely love and return to.</p>
-      <section class="neighborhood">
-      <h3>11ème arrondissement</h3>
-        <ul style="padding-left:20px">
-          <li><a href="https://www.restaurant-aupassage.fr/en/" target="_blank">Au Passage</a> - Modern small plates in a lively setting</li>
-          <li><a href="https://cafedelindustrieparis.fr/en" target="_blank">Café de l'Industrie</a> - Relaxed bistro serving classic French dishes</li>
-          <li><a href="https://www.instagram.com/lesoeillets.paris/?hl=en" target="_blank">Les Oeillets</a> - Natural wine bar</li>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="images/logo.png" alt="Logo" class="logo" />
 
-  </ul>
-</section>
+    <p>
+      <span class="lang en">Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</span>
+      <span class="lang fr">Pauline : +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</span>
+    </p>
+    <p>
+      <span class="lang en">Harry: +44 7854 730229 | harryhollowood@gmail.com</span>
+      <span class="lang fr">Harry : +44 7854 730229 | harryhollowood@gmail.com</span>
+    </p>
+  </footer>
 
-<section class="neighborhood">
-          <h3>6ème arrondissement</h3>
-          <ul style="padding-left:20px">
-          <li><a href="https://le-petit-lutetia.paris/en/" target="_blank">Le Petit Lutetia</a> - Elevated French classics in a traditional setting</li>
-  </ul>
-</section>
+  <script>
+  function setLanguage(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
+    localStorage.setItem('preferredLanguage', lang);
+    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+  }
 
-<section class="neighborhood">
-          <h3>1er arrondissement</h3>
-            <ul style="padding-left:20px">
-          <li>Rue Saint Anne - The go-to street for Japanese and Korean food.
-          Try <a href="https://kintarogroup.com/tonton-ramen/" target="_blank">Tonton Ramen</a>
-          for excellent ramen.</li>
-        </ul>
-</section>
-
-<section class="tips">
-<h3>Other tips</h3>
-        <p><a href="https://lefooding.com/en" target="blank">Le Fooding</a> is a great site to find good places to eat.</a>
-
-        <p>JS food list?</p>
-</section>
-</section>
-
-<!-- IMAGES-->
-<section class="section white">
-  <div class="image-grid">
-    <img src="images/IMG_1723.png" alt="" />
-    <img src="images/IMG_4130.png" alt="" />
-    <img src="images/IMG_5586.png" alt="" />
-  </div>
-</section>
-
-
-<!-- FOOTER -->
-<footer class="footer">
-  <img src="images/logo.png" alt="Logo" class="logo" />
-
-  <p>Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</p>
-  <p>Harry: +44 7854 730229 | harryhollowood@gmail.com</p>
-
-</footer>
-
-<script>
-function setLanguage(lang) {
-  // hide all languages
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-
-  // show selected language
-  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
-
-  // save preference
-  localStorage.setItem('preferredLanguage', lang);
-
-  // highlight selected button
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.classList.remove('active');
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
   });
-  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
-}
-
-// Load saved language or default to English
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-  setLanguage(savedLang);
-});
-</script>
+  </script>
 
 </body>
 </html>
