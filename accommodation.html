@@ -9,43 +9,54 @@
 <body>
 
   <!-- NAV -->
-
   <header class="nav">
     <a href="https://pauline-harry.com/"><img src="images/logo.png" alt="Logo" class="logo" /></a>
 
-
     <nav class="nav-links">
-      <a href="https://pauline-harry.com/#order">
-        <span class="lang en">Order of Day</span>
+      <a href="#order">
+        <span class="lang en">Schedule</span>
         <span class="lang fr">Programme</span>
       </a>
-      <a href="https://pauline-harry.com/#location">
+      <a href="#location">
         <span class="lang en">Location</span>
         <span class="lang fr">Lieu</span>
       </a>
-      <a href="https://pauline-harry.com/#travel">
-        <span class="lang en">Travel & Stay</span>
-        <span class="lang fr">Voyage & Hébergement</span>
-      </a>
-      <a href="https://pauline-harry.com/#faq">
+      <div class="nav-item dropdown">
+        <a href="#travel" class="dropdown-toggle">
+          <span class="lang en">Travel & Stay</span>
+          <span class="lang fr">Voyage & Hébergement</span>
+        </a>
+        <div class="dropdown-menu">
+          <a href="https://pauline-harry.com/getting-there">
+            <span class="lang en">Getting there</span>
+            <span class="lang fr">S’y rendre</span>
+          </a>
+          <a href="https://pauline-harry.com/accommodation">
+            <span class="lang en">Accommodation</span>
+            <span class="lang fr">Hébergement</span>
+          </a>
+          <a href="https://pauline-harry.com/things-to-do">
+            <span class="lang en">Things to do</span>
+            <span class="lang fr">À faire sur place</span>
+          </a>
+        </div>
+      </div>
+      <a href="#faq">
         <span class="lang en">FAQ</span>
         <span class="lang fr">FAQ</span>
       </a>
-      <a href="https://pauline-harry.com/#registry">
+      <a href="#registry">
         <span class="lang en">Registry</span>
         <span class="lang fr">Liste de mariage</span>
       </a>
     </nav>
 
-
-
-
-  <!-- Hamburger icon -->
-   <div class="hamburger" onclick="toggleMenu()">
-     <span></span>
-     <span></span>
-     <span></span>
-   </div>
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
   <div class="lang-switch">
@@ -53,119 +64,174 @@
     <span class="separator">|</span>
     <button onclick="setLanguage('fr')">FR</button>
   </div>
-<!-- HERO -->
-<section class="hero-bis">
-  <div class="hero-text">
-    <h2>Accommodation</h2>
-    <h3>Places to stay</h3>
-    <p>Some B&B and hotel options in the area</p>
+
+  <!-- HERO -->
+  <section class="hero-bis">
+    <div class="hero-text">
+      <h2>
+        <span class="lang en">Accommodation</span>
+        <span class="lang fr">Hébergement</span>
+      </h2>
+      <h3>
+        <span class="lang en">Places to stay</span>
+        <span class="lang fr">Où séjourner</span>
+      </h3>
+      <p>
+        <span class="lang en">Some B&B and hotel options in the area</span>
+        <span class="lang fr">Quelques options de B&B et d’hôtels dans la région</span>
+      </p>
     </div>
-</section>
 
+    <img src="images/castle-icon.png" alt="House icon" />
+  </section>
 
-<section class="section white">
-  <h1>Where to stay</h1>
-
+  <!-- WHERE TO STAY -->
+  <section class="section white">
+    <h1>
+      <span class="lang en">Where to stay</span>
+      <span class="lang fr">Où séjourner</span>
+    </h1>
 
     <div>
-    <p>We recommend staying close to the venue, especially if you plan on joining for brunch on Sunday.</p>
-  <p>However, the venue is located just one hour from Paris, so it is of course feasible to find accomodation there.</p>
-  <p>We've included some hotel options below, but there are plenty of Airbnbs as well in the region.</p>
+      <p>
+        <span class="lang en">We recommend staying close to the venue, but expect that most options will be at least a 15 minute drive.</span>
+        <span class="lang fr">Nous recommandons de séjourner près du lieu, mais la plupart des options nécessitent au moins 15 minutes en voiture.</span>
+      </p>
+      <p>
+        <span class="lang en">You can of course make it back to Paris after, but we hope that doesn’t prevent you from joining us for brunch on Sunday too!</span>
+        <span class="lang fr">Vous pouvez bien sûr retourner à Paris après, mais nous espérons que cela ne vous empêchera pas de nous rejoindre pour le brunch du dimanche !</span>
+      </p>
+      <br>
+      <p>
+        <span class="lang en">We have included some hotel and Airbnb options below with the relevant capacity and pricing. We have pre-reserved them hence on Booking they will show as fully booked for these dates. Please do not hesitate to reach out to us if you would like to take one of these options.</span>
+        <span class="lang fr">Nous avons inclus ci-dessous quelques options d’hôtels et Airbnb avec leur capacité et tarif. Nous les avons pré-réservés, donc sur Booking ils apparaîtront complets pour ces dates. N’hésitez pas à nous contacter si vous souhaitez réserver l’une de ces options.</span>
+      </p>
     </div>
+  </section>
 
-</section>
+  <!-- IMAGES / HOTEL CAROUSEL -->
+  <section class="section white">
+    <div class="hotel-carousel">
+      <button class="carousel-btn prev">&#10094;</button>
 
+      <div class="carousel-track">
 
-<!-- IMAGES-->
-<section class="section white">
-  <div class="hotel-carousel">
-  <button class="carousel-btn prev">&#10094;</button>
+        <a href="https://www.booking.com/hotel/fr/le-manoir-du-cerf.en-gb.html?aid=311076&label=le-moulin-des-marais-iDEjYuMcRILyBPugQGzI3QS477341445092%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936698%3Akwd-1053323622719%3Alp9045998%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YX-SVbABBf1_TwNC0YE2R9c-Share-vGMx1ZZ%401764761461&sid=1ea171bd2c46ea3c3e74d52584700021&dest_id=-1428560&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1770066682&srpvid=f8f377d1525ae60d289573047054e3ee&type=total&ucfs=1&" target="_blank" class="hotel-card">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/486542966.jpg?k=bc1a67d618bfd6fd788ab218dd3ef0e21fe375258b0735d042f334fd3a56e1f5&o=" alt="Hotel 1">
+          <div class="hotel-info">
+            <h3>
+              <span class="lang en">Le Manoir du Cerf</span>
+              <span class="lang fr">Le Manoir du Cerf</span>
+            </h3>
+            <p>
+              <span class="lang en">9 Rue du Point du Jour, Gaillon-sur-Montcient</span>
+              <span class="lang fr">9 Rue du Point du Jour, Gaillon-sur-Montcient</span>
+            </p>
+            <p>
+              <span class="lang en">15 min drive from venue</span>
+              <span class="lang fr">15 minutes en voiture du lieu</span>
+            </p>
+            <span class="book-button">
+              <span class="lang en">View Rooms</span>
+              <span class="lang fr">Voir les chambres</span>
+            </span>
+          </div>
+        </a>
 
-  <div class="carousel-track">
+        <a href="https://hotel2link.com" target="_blank" class="hotel-card">
+          <img src="hotel2.jpg" alt="Hotel 2">
+          <div class="hotel-info">
+            <h3>
+              <span class="lang en">Garden Inn</span>
+              <span class="lang fr">Garden Inn</span>
+            </h3>
+            <p>
+              <span class="lang en">Budget-friendly option</span>
+              <span class="lang fr">Option économique</span>
+            </p>
+            <span class="book-button">
+              <span class="lang en">View Rooms</span>
+              <span class="lang fr">Voir les chambres</span>
+            </span>
+          </div>
+        </a>
 
-    <a href="https://www.booking.com/hotel/fr/le-manoir-du-cerf.en-gb.html?aid=311076&label=le-moulin-des-marais-iDEjYuMcRILyBPugQGzI3QS477341445092%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2395231936698%3Akwd-1053323622719%3Alp9045998%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YX-SVbABBf1_TwNC0YE2R9c-Share-vGMx1ZZ%401764761461&sid=1ea171bd2c46ea3c3e74d52584700021&dest_id=-1428560&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1770066682&srpvid=f8f377d1525ae60d289573047054e3ee&type=total&ucfs=1&" target="_blank" class="hotel-card">
-      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/486542966.jpg?k=bc1a67d618bfd6fd788ab218dd3ef0e21fe375258b0735d042f334fd3a56e1f5&o=" alt="Hotel 1">
-      <div class="hotel-info">
-        <h3>Le Manoir du Cerf</h3>
-        <p>9 Rue du Point du Jour, Gaillon-sur-Montcient</p>
-        <p>15 min drive from venue</p>
-        <span class="book-button">View Rooms</span>
+        <a href="https://hotel3link.com" target="_blank" class="hotel-card">
+          <img src="hotel3.jpg" alt="Hotel 3">
+          <div class="hotel-info">
+            <h3>
+              <span class="lang en">The Grand Suites</span>
+              <span class="lang fr">The Grand Suites</span>
+            </h3>
+            <p>
+              <span class="lang en">Luxury stay</span>
+              <span class="lang fr">Séjour de luxe</span>
+            </p>
+            <span class="book-button">
+              <span class="lang en">View Rooms</span>
+              <span class="lang fr">Voir les chambres</span>
+            </span>
+          </div>
+        </a>
+
       </div>
-    </a>
 
-    <a href="https://hotel2link.com" target="_blank" class="hotel-card">
-      <img src="hotel2.jpg" alt="Hotel 2">
-      <div class="hotel-info">
-        <h3>Garden Inn</h3>
-        <p>Budget-friendly option</p>
-        <span class="book-button">View Rooms</span>
-      </div>
-    </a>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
 
-    <a href="https://hotel3link.com" target="_blank" class="hotel-card">
-      <img src="hotel3.jpg" alt="Hotel 3">
-      <div class="hotel-info">
-        <h3>The Grand Suites</h3>
-        <p>Luxury stay</p>
-        <span class="book-button">View Rooms</span>
-      </div>
-    </a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="images/logo.png" alt="Logo" class="logo" />
 
-  </div>
+    <p>
+      <span class="lang en">Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</span>
+      <span class="lang fr">Pauline : +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</span>
+    </p>
+    <p>
+      <span class="lang en">Harry: +44 7854 730229 | harryhollowood@gmail.com</span>
+      <span class="lang fr">Harry : +44 7854 730229 | harryhollowood@gmail.com</span>
+    </p>
+  </footer>
 
-  <button class="carousel-btn next">&#10095;</button>
-</div>
+  <script>
+  function setLanguage(lang) {
+    // hide all languages
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
 
-</section>
+    // show selected language
+    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
 
+    // save preference
+    localStorage.setItem('preferredLanguage', lang);
 
-<!-- FOOTER -->
-<footer class="footer">
-  <img src="images/logo.png" alt="Logo" class="logo" />
+    // highlight selected button
+    document.querySelectorAll('.lang-switch button').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+  }
 
-  <p>Pauline: +33 7 68 40 27 55 | pauline.a.baudry@gmail.com</p>
-  <p>Harry: +44 7854 730229 | harryhollowood@gmail.com</p>
-
-</footer>
-
-<script>
-function setLanguage(lang) {
-  // hide all languages
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-
-  // show selected language
-  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
-
-  // save preference
-  localStorage.setItem('preferredLanguage', lang);
-
-  // highlight selected button
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.classList.remove('active');
+  // Load saved language or default to English
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
   });
-  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
-}
+  </script>
 
-// Load saved language or default to English
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-  setLanguage(savedLang);
-});
-</script>
+  <script>
+  const track = document.querySelector('.carousel-track');
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: 320, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -320, behavior: 'smooth' });
+  });
+  </script>
 
 </body>
 </html>
-
-<script>
-const track = document.querySelector('.carousel-track');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
-
-nextBtn.addEventListener('click', () => {
-  track.scrollBy({ left: 320, behavior: 'smooth' });
-});
-
-prevBtn.addEventListener('click', () => {
-  track.scrollBy({ left: -320, behavior: 'smooth' });
-});
-</script>
