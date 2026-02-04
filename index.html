@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding Website</title>
+  <title>Pauline & Harry 29-08-26</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,20 +13,35 @@
 <header class="nav">
   <a href="https://pauline-harry.com/"><img src="images/logo.png" alt="Logo" class="logo" /></a>
 
-
   <nav class="nav-links">
     <a href="#order">
-      <span class="lang en">Order of Day</span>
+      <span class="lang en">Schedule</span>
       <span class="lang fr">Programme</span>
     </a>
     <a href="#location">
       <span class="lang en">Location</span>
       <span class="lang fr">Lieu</span>
     </a>
-    <a href="#travel">
-      <span class="lang en">Travel & Stay</span>
-      <span class="lang fr">Voyage & Hébergement</span>
-    </a>
+    <div class="nav-item dropdown">
+      <a href="#travel" class="dropdown-toggle">
+        <span class="lang en">Travel & Stay</span>
+        <span class="lang fr">Voyage & Hébergement</span>
+      </a>
+      <div class="dropdown-menu">
+        <a href="https://pauline-harry.com/getting-there">
+          <span class="lang en">Getting there</span>
+          <span class="lang fr">S’y rendre</span>
+        </a>
+        <a href="https://pauline-harry.com/accommodation">
+          <span class="lang en">Accommodation</span>
+          <span class="lang fr">Hébergement</span>
+        </a>
+        <a href="https://pauline-harry.com/things-to-do">
+          <span class="lang en">Things to do</span>
+          <span class="lang fr">À faire sur place</span>
+        </a>
+      </div>
+    </div>
     <a href="#faq">
       <span class="lang en">FAQ</span>
       <span class="lang fr">FAQ</span>
@@ -37,15 +52,12 @@
     </a>
   </nav>
 
-
-
-
-<!-- Hamburger icon -->
- <div class="hamburger" onclick="toggleMenu()">
-   <span></span>
-   <span></span>
-   <span></span>
- </div>
+  <!-- Hamburger icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <div class="lang-switch">
@@ -54,7 +66,6 @@
   <button onclick="setLanguage('fr')">FR</button>
 </div>
 
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
@@ -62,9 +73,11 @@
       <span class="lang en">We’re getting married</span>
       <span class="lang fr">Nous nous marions</span>
     </h2>
+    <br>
     <h1>Pauline & Harry</h1>
+    <br>
     <p>
-      <span class="lang en">August 29, 2026</span>
+      <span class="lang en">29 August 2026</span>
       <span class="lang fr">29 Août 2026</span>
     </p>
     <p>Golf du Prieuré, Sailly, France</p>
@@ -82,48 +95,44 @@
 <!-- ORDER OF DAY -->
 <section id="order" class="section grey overlap">
   <h1>
-    <span class="lang en">Order of Day</span>
+    <span class="lang en">Schedule</span>
     <span class="lang fr">Programme</span>
   </h1>
 
   <div class="two-col">
     <img src="images/flowers-prieure.png" alt="Prieure with flowers" />
     <div>
-      <h2>Saturday</h2>
-      <h2>17h - Arrival</h2>
+      <h3 class="sans-serif">SATURDAY</h3>
+      <hr>
+      <h3>17h Arrival</h3>
       <p>
-        <span class="lang en">Please aim to arrive at 5 pm to make your way to the ceremony. There will be directions upon arrival.</span>
-        <span class="lang fr">Merci de viser une arrivée à 17h pour vous rendre à la cérémonie. Des indications seront fournies à votre arrivée.</span>
+        <span class="lang en">Please aim to arrive at 17h for the ceremony, which will begin at 17h30.</span>
+        <span class="lang fr">Merci de prévoir une arrivée à 17h pour la cérémonie, qui débutera à 17h30.</span>
       </p>
       <p>
-        <span class="lang en">Note: there will be a short but steep walk. Some transport will be available on site for those who are less able to walk up.</span>
-        <span class="lang fr">Remarque : il y aura une courte mais raide montée. Un transport sera disponible sur place pour ceux qui ont du mal à marcher.</span>
-      </p>
-      <h2>17h30 - Ceremony</h2>
-      <p>
-        <span class="lang en">Please make sure you are seated by 5:30 pm.</span>
-        <span class="lang fr">Merci d’être assis pour 17h30.</span>
-      </p>
-      <h2>18h15 - Cocktail</h2>
-      <p>
-        <span class="lang en">Drinks in front of the Prieuré.</span>
-        <span class="lang fr">Cocktails devant le Prieuré.</span>
-      </p>
-      <h2>20h - Dinner</h2>
-      <p>
-        <span class="lang en">Dinner and party.</span>
-        <span class="lang fr">Dîner et soirée.</span>
-      </p>
-      <p>
-        <span class="lang en">We hope you can stay for a boogie, with ample time for the most energetic - the venue will accommodate us until 4am.</span>
-        <span class="lang fr">Nous espérons que vous resterez danser, le lieu restera ouvert jusqu’à 4h pour les plus énergiques.</span>
+        <span class="lang en">Note: there will be a short but steep walk. Transport available on site for those who prefer to walk.</span>
+        <span class="lang fr">Remarque : il y aura une courte montée assez raide. Un moyen de transport sera disponible sur place pour ceux qui le souhaitent.</span>
       </p>
       <br>
-        <h2>Sunday - 12h</h2>
-        <p>
-          <span class="lang en">Please join us for brunch at the same venue from 12h.</span>
-          <span class="lang fr">Nous vous invitons à nous rejoindre pour le brunch, au même endroit, à partir de 12h.</span>
-        </p>
+      <h3>18h30 Cocktail</h3>
+      <p>
+        <span class="lang en">Drinks reception in front of the Prieuré.</span>
+        <span class="lang fr">Cocktails devant le Prieuré.</span>
+      </p>
+      <br>
+      <h3>20h Dinner and Dancing</h3>
+      <p>
+        <span class="lang en">We hope you can stay for a boogie, with ample time for the most energetic - the venue will accommodate us until 4am.</span>
+        <span class="lang fr">Dîner et soirée dansante.</span>
+      </p>
+      <br><br>
+      <h3 class="sans-serif">SUNDAY</h3>
+      <hr>
+      <h3>12h Brunch</h3>
+      <p>
+        <span class="lang en">We would love for you to join us for brunch at the same venue from noon</span>
+        <span class="lang fr">Nous vous invitons à nous rejoindre pour le brunch, au même endroit, à partir de 12h.</span>
+      </p>
     </div>
   </div>
 </section>
@@ -137,7 +146,7 @@
         <span class="lang fr">Lieu</span>
       </h1>
       <p>
-        <span class="lang en">The wedding is taking place at the Golf du Prieuré, which is a location near to our hearts (non-golfer ones too!). The venue is in Sailly, in the Yvelines department, about 1 hour car ride from Paris.</span>
+        <span class="lang en">We’ll be celebrating our wedding at the Golf du Prieuré, a place dear to us - golfers and non-golfers alike. Set in Sailly, in the Yvelines, the venue is about an hour’s drive northwest of Paris.</span>
         <span class="lang fr">Le mariage aura lieu au Golf du Prieuré, un lieu cher à nos cœurs (même pour ceux qui ne jouent pas au golf !). Le lieu est à Sailly, dans les Yvelines, à environ 1 heure de route de Paris.</span>
       </p>
     </div>
@@ -156,13 +165,15 @@
 
   <div class="three-boxes">
     <div class="box">
+      <img src="images/balloon-icon.png" alt="Car icon" />
       <h3>
         <span class="lang en">Getting There</span>
-        <span class="lang fr">Se rendre au lieu</span>
+        <span class="lang fr">S’y rendre</span>
       </h3>
-      <p><a href="https://pauline-harry.com/getting-there"><span class="lang en">Directions & transport</span><span class="lang fr">Itinéraire & transport</span></a></p>
+      <p><a href="https://pauline-harry.com/getting-there"><span class="lang en">Directions & transport</span><span class="lang fr">Itinéraire & transports</span></a></p>
     </div>
     <div class="box">
+      <img src="images/castle-icon.png" alt="House icon" />
       <h3>
         <span class="lang en">Accommodation</span>
         <span class="lang fr">Hébergement</span>
@@ -170,11 +181,12 @@
       <p><a href="https://pauline-harry.com/accommodation"><span class="lang en">Places to stay</span><span class="lang fr">Où loger</span></a></p>
     </div>
     <div class="box">
+      <img src="images/croissant-icon.png" alt="Camera icon" />
       <h3>
         <span class="lang en">Local Tips</span>
         <span class="lang fr">Conseils locaux</span>
       </h3>
-      <p><a href="https://pauline-harry.com/things-to-do"><span class="lang en">Things to do</span><span class="lang fr">Activités à faire</span></a></p>
+      <p><a href="https://pauline-harry.com/things-to-do"><span class="lang en">Things to do</span><span class="lang fr">À faire sur place</span></a></p>
     </div>
   </div>
 </section>
@@ -197,7 +209,7 @@
         </button>
         <div class="faq-answer">
           <p>
-            <span class="lang en">Formal. Suits, dresses, jumpsuits... we trust you to look the part! (The grooms party will be wearing morning coats, which you are welcome to do as well, however it is not required.)</span>
+            <span class="lang en">Formal. Suits, dresses, jumpsuits, we trust you to look the part!<br>Mens Suits: Darker/classic tones are preferred.</span>
             <span class="lang fr">Tenue formelle. Costumes, robes, combinaisons… Le cortège des mariés portera des redingotes, vous pouvez le faire également mais ce n’est pas obligatoire.</span>
           </p>
         </div>
@@ -212,8 +224,9 @@
         </button>
         <div class="faq-answer">
           <p>
-            <span class="lang en">We recommend staying close to the venue...</span>
-            <span class="lang fr">Nous recommandons de séjourner près du lieu...</span>
+            <span class="lang en">We recommend staying close to the venue, but expect that most options will be at least a 15 minute drive.<br>
+You can of course make it back to Paris after, but we hope that doesn’t prevent you from joining us for brunch on Sunday too!</span>
+            <span class="lang fr">Nous vous conseillons de séjourner à proximité du lieu, en gardant à l’esprit que la plupart des hébergements se trouvent à au moins 15 minutes en voiture. Vous pouvez bien sûr rentrer à Paris après la réception, mais nous espérons que cela ne vous empêchera pas de vous joindre à nous pour le brunch du dimanche !</span>
           </p>
         </div>
       </div>
@@ -227,8 +240,8 @@
         </button>
         <div class="faq-answer">
           <p>
-            <span class="lang en">Unfortunately we won't be able to accommodate children during our wedding reception...</span>
-            <span class="lang fr">Malheureusement nous ne pourrons pas accueillir d’enfants lors de la réception...</span>
+            <span class="lang en">Unfortunately we won't be able to accommodate children during our wedding reception on Saturday, but we would love for your little ones to join us at brunch on Sunday.</span>
+            <span class="lang fr">Malheureusement, nous ne pourrons pas accueillir d’enfants lors de la réception du samedi, mais nous serions ravis de les voir se joindre à nous pour le brunch du dimanche.</span>
           </p>
         </div>
       </div>
@@ -242,8 +255,32 @@
         </button>
         <div class="faq-answer">
           <p>
-            <span class="lang en">Car or taxis to and from the venue...</span>
-            <span class="lang fr">Voiture ou taxis pour se rendre et revenir du lieu...</span>
+            <span class="lang en">
+              <p>We recommend pre-booking a car or taxi for the return journey after the reception</p>
+              <br>
+              <p>Some taxi companies that will be able to take reservations:</p>
+                <ul style="padding-left:20px">
+                  <li>Taxi-VTC Yvelines: +33 6 07 23 45 67</li>
+                  <li>Taxi Bruno: +33 6 07 50 15 28</li>
+                </ul>
+                <br>
+              <p>The venue has ample on-site parking if you choose to drive, either on Saturday or Sunday.</p>
+              <br>
+              <p>There are frequent trains from Paris Saint-Lazare (45 minutes) to Épône–Mézières, followed by a 20-minute taxi ride to the venue. However, we recommend coordinating with other guests to share an Uber from Paris, which typically costs around €60 total for the journey to the venue and surrounding area.</p>
+            </span>
+            <span class="lang fr">
+              Nous vous recommandons de réserver à l’avance une voiture ou un taxi pour le retour après la réception.
+              <br><br>
+              Quelques compagnies de taxi acceptant les réservations :
+              <ul style="padding-left:20px">
+                <li>Taxi-VTC Yvelines : +33 6 07 23 45 67</li>
+                <li>Taxi Bruno : +33 6 07 50 15 28</li>
+              </ul>
+              <br>
+              Le lieu dispose d’un grand parking sur place si vous choisissez de venir en voiture, le samedi comme le dimanche.
+              <br><br>
+              Des trains fréquents relient Paris Saint-Lazare à Épône–Mézières (environ 45 minutes), suivis d’un trajet de 20 minutes en taxi jusqu’au lieu. Nous recommandons toutefois de vous organiser avec d’autres invités pour partager un Uber depuis Paris (environ 60 € au total).
+            </span>
           </p>
         </div>
       </div>
@@ -257,8 +294,20 @@
         </button>
         <div class="faq-answer">
           <p>
-            <span class="lang en">The golf is technically open during that weekend...</span>
-            <span class="lang fr">Le golf est techniquement ouvert ce week-end...</span>
+            <span class="lang en">
+              <p>The golf is technically open during that weekend, however, it is for members and member guests only.</p>
+              <br>
+              <p>There will be an opportunity to play 9 or 18-holes after the brunch on Sunday, from roughly 14h. Please flag in the RSVP whether you would be interested in playing. The green fees will be determined by the club according to the number of golfers interested, as will the potential for hiring clubs, if required.</p>
+              <br>
+              <p>Note: if you are a complete beginner, we unfortunately cannot include you in this activity, as the Golf requires players to have a license.</p>
+            </span>
+            <span class="lang fr">
+              Le golf est techniquement ouvert ce week-end, mais réservé aux membres et à leurs invités.
+              <br><br>
+              Il sera possible de jouer 9 ou 18 trous après le brunch du dimanche, à partir d’environ 14h. Merci d’indiquer dans le RSVP si vous seriez intéressé(e). Les green fees seront déterminés par le club en fonction du nombre de joueurs, ainsi que la possibilité de louer du matériel si nécessaire.
+              <br><br>
+              Remarque : si vous êtes débutant(e), nous ne pourrons malheureusement pas vous inclure dans cette activité, le Golf exigeant une licence pour jouer.
+            </span>
           </p>
         </div>
       </div>
