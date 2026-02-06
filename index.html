@@ -59,6 +59,7 @@
     <span></span>
   </div>
 </header>
+
 <div class="lang-switch">
   <button onclick="setLanguage('en')">EN</button>
   <span class="separator">|</span>
@@ -75,10 +76,10 @@
     <br>
     <h1>Pauline & Harry</h1>
     <br>
-    <p>
+    <h2>
       <span class="lang en">29 August 2026</span>
       <span class="lang fr">29 Août 2026</span>
-    </p>
+    </h2>
     <p>Golf du Prieuré, Sailly, France</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8JFQz77jfGIF4BY51MWFyxsTmc3xA7Y-Y7LEsrXHZJ7Lbog/viewform?usp=dialog" target="_blank">
       <button class="rsvp-btn">
@@ -92,7 +93,7 @@
 </section>
 
 <!-- ORDER OF DAY -->
-<section id="order" class="section grey overlap">
+<section id="schedule" class="section grey overlap">
   <h1>
     <span class="lang en">Schedule</span>
     <span class="lang fr">Programme</span>
@@ -105,18 +106,18 @@
       <hr>
       <h3>17h Arrival</h3>
       <p>
-        <span class="lang en">Please aim to arrive at 17h for the ceremony, which will begin at 17h30.</span>
-        <span class="lang fr">Merci de prévoir une arrivée à 17h pour la cérémonie, qui débutera à 17h30.</span>
+        <span class="lang en">Please aim to arrive at 17h to make your way to the ceremony and enjoy some refershments. The ceremony will begin at 17h30.</span>
+        <span class="lang fr">Merci de prévoir d’arriver à 17h afin de vous rendre à la cérémonie et de profiter de quelques rafraîchissements. La cérémonie débutera à 17h30.</span>
       </p>
       <p>
-        <span class="lang en">Note: there will be a short but steep walk. Transport available on site for those who prefer to walk.</span>
+        <span class="lang en">Note: there will be a short but steep walk. Transport available on site for those who prefer not to walk.</span>
         <span class="lang fr">Remarque : il y aura une courte montée assez raide. Un moyen de transport sera disponible sur place pour ceux qui le souhaitent.</span>
       </p>
       <br>
       <h3>18h30 Cocktail</h3>
       <p>
-        <span class="lang en">Drinks reception in front of the Prieuré.</span>
-        <span class="lang fr">Cocktails devant le Prieuré.</span>
+        <span class="lang en">Drinks reception in front of the club house.</span>
+        <span class="lang fr">Cocktails devant le club house.</span>
       </p>
       <br>
       <h3>20h Dinner and Dancing</h3>
@@ -131,6 +132,12 @@
       <p>
         <span class="lang en">We would love for you to join us for brunch at the same venue from noon</span>
         <span class="lang fr">Nous vous invitons à nous rejoindre pour le brunch, au même endroit, à partir de 12h.</span>
+      </p>
+      <br>
+      <h3>14h Golf (optional)</h3>
+      <p>
+        <span class="lang en">We are planning an international but friendly tournament for our golfer guests.</span>
+        <span class="lang fr">Nous organison un tournoi international et amical pour les invités golfeurs.</span>
       </p>
     </div>
   </div>
@@ -349,31 +356,7 @@ You can of course make it back to Paris after, but we hope that doesn’t preven
   <p>Harry: +44 7854 730229 | harryhollowood@gmail.com</p>
 </footer>
 
-<!-- LANGUAGE SCRIPT -->
-<script>
-function setLanguage(lang) {
-  // hide all languages
-  document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
 
-  // show selected language
-  document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
-
-  // save preference
-  localStorage.setItem('preferredLanguage', lang);
-
-  // highlight selected button
-  document.querySelectorAll('.lang-switch button').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
-}
-
-// Load saved language or default to English
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-  setLanguage(savedLang);
-});
-</script>
 
 <script>
 function toggleMenu() {

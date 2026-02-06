@@ -102,8 +102,8 @@
         </p>
         <br>
         <p>
-          <span class="lang en">The venue has ample on-site parking if you choose to drive, either on Saturday or Sunday.</span>
-          <span class="lang fr">Le lieu dispose d’un grand parking si vous choisissez de venir en voiture, le samedi ou le dimanche.</span>
+          <span class="lang en">The venue has ample on-site parking if you choose to drive, either on Saturday or Sunday. We still recommend pre-booking taxis for getting home after the wedding, so you can fully enjoy if you plan on drinking.</span>
+          <span class="lang fr">Le lieu dispose d’un grand parking si vous choisissez de venir en voiture, le samedi ou le dimanche. Nous recommendons toutefois de réserver des taxis pour rentrer, afin que vous puissiez pleinement profiter de la soirée et trinquer avec nous.</span>
         </p>
       </div>
     </div>
@@ -176,30 +176,31 @@
     </p>
   </footer>
 
+
   <script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+
+  // Keep language script
   function setLanguage(lang) {
-    // hide all languages
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-
-    // show selected language
     document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
-
-    // save preference
     localStorage.setItem('preferredLanguage', lang);
 
-    // highlight selected button
-    document.querySelectorAll('.lang-switch button').forEach(btn => {
-      btn.classList.remove('active');
-    });
+    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
     document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
   }
 
-  // Load saved language or default to English
   document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     setLanguage(savedLang);
   });
   </script>
+
+
+
+
 
 </body>
 </html>

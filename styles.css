@@ -491,6 +491,7 @@ ul li{
   width: 10vw;   /* 1/3 of the viewport width */
   max-width: 100%;  /* prevents overflow if container is smaller */
   height: auto;     /* keeps proportions */
+  min-width: 100px;
 }
 
 .box{

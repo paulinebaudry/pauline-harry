@@ -9,7 +9,7 @@
 <body>
 
   <!-- NAV -->
-   <header class="nav">
+  <header class="nav">
     <a href="https://pauline-harry.com/"><img src="images/logo.png" alt="Logo" class="logo" /></a>
 
     <nav class="nav-links">
@@ -217,19 +217,24 @@
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     setLanguage(savedLang);
   });
-  </script>
-
   <script>
-  const track = document.querySelector('.carousel-track');
-  const nextBtn = document.querySelector('.next');
-  const prevBtn = document.querySelector('.prev');
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
 
-  nextBtn.addEventListener('click', () => {
-    track.scrollBy({ left: 320, behavior: 'smooth' });
-  });
+  // Keep language script
+  function setLanguage(lang) {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'inline');
+    localStorage.setItem('preferredLanguage', lang);
 
-  prevBtn.addEventListener('click', () => {
-    track.scrollBy({ left: -320, behavior: 'smooth' });
+    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.lang-switch button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    setLanguage(savedLang);
   });
   </script>
 
